@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process \"c:\\\\Users\\\\Dell i5\\\\OneDrive\\\\�rea de Trabalho\\\\FADECIO\\\\PROJETOS\\\\s3-barbearia\\\\index.html\")"
+    ]
+  }
+}
