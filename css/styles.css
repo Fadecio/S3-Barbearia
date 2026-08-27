@@ -410,7 +410,9 @@ ul {
   }
 
   to {
-    transform: translate3d(-50%, 0, 0);
+    /* A trilha tem 3 grupos idênticos (.hero-names-group); precisa andar
+       exatamente 1 grupo (100% / 3) pra emendar sem pulo quando reinicia. */
+    transform: translate3d(-33.3334%, 0, 0);
   }
 }
 
