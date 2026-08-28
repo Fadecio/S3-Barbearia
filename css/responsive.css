@@ -4,13 +4,24 @@
    os ajustes por tamanho de tela e o respeito a "prefers-reduced-motion".
    ========================================================================== */
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .brand-name {
     font-size: 17px;
   }
   .badge-img {
     width: 28px;
     height: 28px;
+  }
+
+  .section-title {
+    font-size: 26px !important;
+    text-align: center;
+  }
+
+  .sobre-texto {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -33,6 +44,22 @@
   }
 
   .hero-trust{
+    justify-content: center;
+  }
+
+  .servicos .section-title {
+    text-align: center;
+  }
+
+  .contato-info {
+    text-align: center;
+  }
+
+  .contato-info .contato-linha {
+    align-items: center;
+  }
+
+  .contato-info .pagamentos {
     justify-content: center;
   }
 }
