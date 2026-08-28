@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Responsividade — breakpoints e preferências de movimento
+   Todo @media do site fica aqui. Mobile é a base em styles.css; aqui só
+   os ajustes por tamanho de tela e o respeito a "prefers-reduced-motion".
+   ========================================================================== */
+
+@media (max-width: 400px) {
+  .brand-name {
+    font-size: 17px;
+  }
+  .badge-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+.header-inner{
+    padding-top: 45px;
+}
+  .eyebrow {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .servicos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 780px) {
+  .header-city,
+  .header-phone {
+    display: inline-block;
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sobre-inner {
+    grid-template-columns: 0.7fr 1.3fr;
+  }
+
+  .duvidas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 820px) {
+  .hero-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .hero-carousel {
+    margin: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-names-track {
+    animation: none;
+  }
+
+  .carousel-track,
+  .carousel-slide {
+    transition: none;
+  }
+}
